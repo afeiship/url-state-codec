@@ -35,8 +35,14 @@
   },
   "homepage": "https://js.work",
   "keywords": [
+    "url-state",
+    "base64url",
+    "codec",
     "url-state-codec",
     "number",
     "num"
-  ]
+  ],
+  "dependencies": {
+    "js-base64": "^3.9.6"
+  }
 }
