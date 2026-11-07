@@ -1,0 +1,24 @@
+# url-state-codec
+
+> A tiny codec for serializing JSON state into shareable URL-safe strings (base64url).
+
+`@jswork/url-state-codec` encodes a JSON state object into a URL-safe, padding-free base64url string (suitable for query params like `?state=...`), and decodes it back. Non-ASCII values (Chinese, emoji) are supported. `decode` returns `null` for absent/empty/corrupted input so call sites can fall back to defaults silently.
+
+## Documentation
+
+- [README](README.md): Project overview, installation, usage examples, and API reference
+- [License](LICENSE.txt): MIT license terms
+
+## Source
+
+- [src/index.ts](src/index.ts): Core implementation — `encode` and `decode` functions built on `js-base64`
+
+## Tests
+
+- [__tests__/index.spec.ts](__tests__/index.spec.ts): Test suite covering encode/decode round-trips and corrupted input handling
+
+## Configuration
+
+- [package.json](package.json): Package metadata, build/test scripts (tsup + bun test), dependencies
+- [tsup.config.ts](tsup.config.ts): Build configuration for CJS/ESM/UMD outputs and type declarations
+- [tsconfig.json](tsconfig.json): TypeScript compiler options

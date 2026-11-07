@@ -8,7 +8,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "llms.txt"
   ],
   "prettier": "@jswork/style-guide/prettier",
   "scripts": {
